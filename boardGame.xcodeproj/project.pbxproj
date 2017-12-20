@@ -14,6 +14,7 @@
 		791B0AD81FE9AD9900B0ED91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791B0AD61FE9AD9900B0ED91 /* LaunchScreen.storyboard */; };
 		791B0AE31FE9AD9A00B0ED91 /* boardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B0AE21FE9AD9A00B0ED91 /* boardGameTests.swift */; };
 		791B0AEE1FE9AD9A00B0ED91 /* boardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B0AED1FE9AD9A00B0ED91 /* boardGameUITests.swift */; };
+		791B0AFC1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico in Resources */ = {isa = PBXBuildFile; fileRef = 791B0AFB1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		791B0AE91FE9AD9A00B0ED91 /* boardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		791B0AED1FE9AD9A00B0ED91 /* boardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardGameUITests.swift; sourceTree = "<group>"; };
 		791B0AEF1FE9AD9A00B0ED91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		791B0AFB1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = "Osullivanluke-Orb-Os-X-Chess.ico"; path = "Assets.xcassets/Osullivanluke-Orb-Os-X-Chess.ico"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				791B0ACF1FE9AD9900B0ED91 /* ViewController.swift */,
 				791B0AD11FE9AD9900B0ED91 /* Main.storyboard */,
 				791B0AD41FE9AD9900B0ED91 /* Assets.xcassets */,
+				791B0AFB1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico */,
 				791B0AD61FE9AD9900B0ED91 /* LaunchScreen.storyboard */,
 				791B0AD91FE9AD9900B0ED91 /* Info.plist */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791B0AFC1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico in Resources */,
 				791B0AD81FE9AD9900B0ED91 /* LaunchScreen.storyboard in Resources */,
 				791B0AD51FE9AD9900B0ED91 /* Assets.xcassets in Resources */,
 				791B0AD31FE9AD9900B0ED91 /* Main.storyboard in Resources */,
