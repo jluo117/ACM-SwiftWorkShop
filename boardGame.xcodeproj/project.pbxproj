@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7904F05D1FEB2E020096563E /* knight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7904F05B1FEB2E020096563E /* knight.gif */; };
 		791B0ACE1FE9AD9900B0ED91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B0ACD1FE9AD9900B0ED91 /* AppDelegate.swift */; };
 		791B0AD01FE9AD9900B0ED91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B0ACF1FE9AD9900B0ED91 /* ViewController.swift */; };
 		791B0AD31FE9AD9900B0ED91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791B0AD11FE9AD9900B0ED91 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7904F05C1FEB2E020096563E /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = Base.lproj/knight.gif; sourceTree = "<group>"; };
+		7904F05E1FEB2E150096563E /* en */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = en; path = en.lproj/knight.gif; sourceTree = "<group>"; };
 		791B0ACA1FE9AD9900B0ED91 /* boardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		791B0ACD1FE9AD9900B0ED91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		791B0ACF1FE9AD9900B0ED91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 				791B0ACD1FE9AD9900B0ED91 /* AppDelegate.swift */,
 				791B0ACF1FE9AD9900B0ED91 /* ViewController.swift */,
 				791B0AD11FE9AD9900B0ED91 /* Main.storyboard */,
+				7904F05B1FEB2E020096563E /* knight.gif */,
 				791B0AD41FE9AD9900B0ED91 /* Assets.xcassets */,
 				791B0AFB1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico */,
 				791B0AD61FE9AD9900B0ED91 /* LaunchScreen.storyboard */,
@@ -239,6 +243,7 @@
 				791B0AD81FE9AD9900B0ED91 /* LaunchScreen.storyboard in Resources */,
 				791B0AD51FE9AD9900B0ED91 /* Assets.xcassets in Resources */,
 				791B0AD31FE9AD9900B0ED91 /* Main.storyboard in Resources */,
+				7904F05D1FEB2E020096563E /* knight.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +305,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7904F05B1FEB2E020096563E /* knight.gif */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7904F05C1FEB2E020096563E /* Base */,
+				7904F05E1FEB2E150096563E /* en */,
+			);
+			name = knight.gif;
+			sourceTree = "<group>";
+		};
 		791B0AD11FE9AD9900B0ED91 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
