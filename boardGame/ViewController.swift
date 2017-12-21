@@ -71,10 +71,10 @@ class ViewController: UIViewController {
         dice2.image = UIImage(named: dice[roll2])
         roll1 += 1
         roll2 += 1
-        place[UserPiece].backgroundColor = UIColor.blue
+        place[UserPiece].backgroundColor = UIColor(red:0.00, green:0.73, blue:0.94, alpha:1.0)
         UserPiece = UserPiece + roll1 + roll2
         UserPiece = UserPiece % 16
-        place[UserPiece].backgroundColor = UIColor.green
+        place[UserPiece].backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
         
     }
     override func didReceiveMemoryWarning() {
