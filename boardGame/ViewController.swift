@@ -17,8 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var dice2: UIImageView!
     @IBOutlet weak var dice1: UIImageView!
     var UserPiece = 0
+    var curLevel = 1
+    var usrMoney = 200
     var dice = [String]()
-    var place = [UILabel]()
+    var place = [Places]()
     @IBOutlet weak var space2: UILabel!
     
     @IBOutlet weak var space3: UILabel!
@@ -54,12 +56,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var end: UILabel!
     
+    @IBOutlet weak var Money: UILabel!
+    @IBOutlet weak var Level: UILabel!
     override func viewDidLoad() {
         dice = ["dice1","dice2","dice3","dice4","dice5","dice6"]
         super.viewDidLoad()
         playerImage.image = #imageLiteral(resourceName: "knight.gif")
-        place = [start,space2,space3,space4,space5,space6,space7,space8,space9,space10,space11,space12,space13,space14,space15,end]
-        place[UserPiece].backgroundColor = UIColor.green
+        let placeID = [start,space2,space3,space4,space5,space6,space7,space8,space9,space10,space11,space12,space13,space14,space15,end]
+        for i in placeID{
+            let newPlace = Places(ID: i!)
+            place.append(newPlace)
+        }
+        place[UserPiece].BoardID.backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
+        Level.text = String(curLevel)
+        Money.text = String(usrMoney)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -71,10 +81,16 @@ class ViewController: UIViewController {
         dice2.image = UIImage(named: dice[roll2])
         roll1 += 1
         roll2 += 1
-        place[UserPiece].backgroundColor = UIColor(red:0.00, green:0.73, blue:0.94, alpha:1.0)
+        place[UserPiece].BoardID.backgroundColor = UIColor(red:0.00, green:0.73, blue:0.94, alpha:1.0)
         UserPiece = UserPiece + roll1 + roll2
+        if (UserPiece >= 16){
+            curLevel += 1
+            usrMoney += 200
+        }
+        Level.text = String(curLevel)
+        Money.text = String(usrMoney)
         UserPiece = UserPiece % 16
-        place[UserPiece].backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
+        place[UserPiece].BoardID.backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
         
     }
     override func didReceiveMemoryWarning() {
