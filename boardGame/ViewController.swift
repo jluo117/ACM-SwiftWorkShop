@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var usrMoney = 200
     var dice = [String]()
     var place = [Places]()
+    //label UI to variables
     @IBOutlet weak var space2: UILabel!
     
     @IBOutlet weak var space3: UILabel!
@@ -54,10 +55,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var space15: UILabel!
     @IBOutlet weak var end: UILabel!
-    //var storyBoard: UIStoryboard = UIStoryboard(name: "main", bundle: nil)
     @IBOutlet weak var Money: UILabel!
     @IBOutlet weak var Level: UILabel!
     override func viewDidLoad() {
+        //Load data from hard drive
         if let loadMoney = (UserDefaults.standard.object(forKey: "Cash") as? Int){
             if (loadMoney > 0){
                 usrMoney = loadMoney
@@ -65,7 +66,7 @@ class ViewController: UIViewController {
             if let loadLvl = (UserDefaults.standard.object(forKey: "Level") as? Int){
                 curLevel = loadLvl
             }
-        }   
+        }
         
         dice = ["dice1","dice2","dice3","dice4","dice5","dice6"]
         super.viewDidLoad()
@@ -99,11 +100,12 @@ class ViewController: UIViewController {
         place[UserPiece].land(usrMoney: &usrMoney,curLevel: &curLevel)
         Level.text = String(curLevel)
         Money.text = String(usrMoney)
-        //UserPiece = UserPiece % 16
         place[UserPiece].BoardID.backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
+        //save data
         UserDefaults.standard.set(usrMoney, forKey: "Cash")
         UserDefaults.standard.set(curLevel, forKey: "Level")
         if (usrMoney <= 0){
+            // change story board
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! end
             self.present(vc, animated: true, completion: nil)
         }
