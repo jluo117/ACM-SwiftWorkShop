@@ -58,6 +58,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var Money: UILabel!
     @IBOutlet weak var Level: UILabel!
     override func viewDidLoad() {
+        if let loadMoney = (UserDefaults.standard.object(forKey: "Cash") as? Int){
+            if (loadMoney > 0){
+                usrMoney = loadMoney
+            }
+            if let loadLvl = (UserDefaults.standard.object(forKey: "Level") as? Int){
+                curLevel = loadLvl
+            }
+        }   
+        
         dice = ["dice1","dice2","dice3","dice4","dice5","dice6"]
         super.viewDidLoad()
         playerImage.image = #imageLiteral(resourceName: "knight.gif")
@@ -92,6 +101,8 @@ class ViewController: UIViewController {
         Money.text = String(usrMoney)
         //UserPiece = UserPiece % 16
         place[UserPiece].BoardID.backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
+        UserDefaults.standard.set(usrMoney, forKey: "Cash")
+        UserDefaults.standard.set(curLevel, forKey: "Level")
         if (usrMoney <= 0){
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! end
             self.present(vc, animated: true, completion: nil)
