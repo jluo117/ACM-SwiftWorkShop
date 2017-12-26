@@ -17,6 +17,8 @@
 		791B0AEE1FE9AD9A00B0ED91 /* boardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B0AED1FE9AD9A00B0ED91 /* boardGameUITests.swift */; };
 		791B0AFC1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico in Resources */ = {isa = PBXBuildFile; fileRef = 791B0AFB1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico */; };
 		7944AC3F1FF2EBE30018E17C /* PlaceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7944AC3E1FF2EBE30018E17C /* PlaceClass.swift */; };
+		7944AC411FF2FB150018E17C /* end.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7944AC401FF2FB150018E17C /* end.swift */; };
+		7944AC431FF301F30018E17C /* battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7944AC421FF301F30018E17C /* battle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		791B0AEF1FE9AD9A00B0ED91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		791B0AFB1FE9D87300B0ED91 /* Osullivanluke-Orb-Os-X-Chess.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = "Osullivanluke-Orb-Os-X-Chess.ico"; path = "Assets.xcassets/Osullivanluke-Orb-Os-X-Chess.ico"; sourceTree = "<group>"; };
 		7944AC3E1FF2EBE30018E17C /* PlaceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceClass.swift; path = boardGame/PlaceClass.swift; sourceTree = "<group>"; };
+		7944AC401FF2FB150018E17C /* end.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = end.swift; path = boardGame/end.swift; sourceTree = "<group>"; };
+		7944AC421FF301F30018E17C /* battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = battle.swift; path = boardGame/battle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		791B0AC11FE9AD9900B0ED91 = {
 			isa = PBXGroup;
 			children = (
+				7944AC421FF301F30018E17C /* battle.swift */,
+				7944AC401FF2FB150018E17C /* end.swift */,
 				7944AC3E1FF2EBE30018E17C /* PlaceClass.swift */,
 				791B0ACC1FE9AD9900B0ED91 /* boardGame */,
 				791B0AE11FE9AD9A00B0ED91 /* boardGameTests */,
@@ -274,6 +280,8 @@
 				791B0AD01FE9AD9900B0ED91 /* ViewController.swift in Sources */,
 				7944AC3F1FF2EBE30018E17C /* PlaceClass.swift in Sources */,
 				791B0ACE1FE9AD9900B0ED91 /* AppDelegate.swift in Sources */,
+				7944AC411FF2FB150018E17C /* end.swift in Sources */,
+				7944AC431FF301F30018E17C /* battle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

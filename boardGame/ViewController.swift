@@ -53,9 +53,8 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var space15: UILabel!
-    
     @IBOutlet weak var end: UILabel!
-    
+    //var storyBoard: UIStoryboard = UIStoryboard(name: "main", bundle: nil)
     @IBOutlet weak var Money: UILabel!
     @IBOutlet weak var Level: UILabel!
     override func viewDidLoad() {
@@ -87,11 +86,16 @@ class ViewController: UIViewController {
             curLevel += 1
             usrMoney += 200
         }
+        UserPiece = UserPiece % 16
+        place[UserPiece].land(usrMoney: &usrMoney,curLevel: &curLevel)
         Level.text = String(curLevel)
         Money.text = String(usrMoney)
-        UserPiece = UserPiece % 16
+        //UserPiece = UserPiece % 16
         place[UserPiece].BoardID.backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
-        
+        if (usrMoney <= 0){
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! end
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
