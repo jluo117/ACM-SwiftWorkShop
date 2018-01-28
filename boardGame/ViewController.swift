@@ -53,6 +53,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var space14: UILabel!
     
     
+    @IBOutlet weak var test: UIView!
     @IBOutlet weak var space15: UILabel!
     @IBOutlet weak var end: UILabel!
     @IBOutlet weak var Money: UILabel!
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
                 curLevel = loadLvl
             }
         }
-        
+        test.backgroundColor = UIColor(red:0.13, green:0.75, blue:0.33, alpha:1.0)
         dice = ["dice1","dice2","dice3","dice4","dice5","dice6"]
         super.viewDidLoad()
         playerImage.image = #imageLiteral(resourceName: "knight.gif")
